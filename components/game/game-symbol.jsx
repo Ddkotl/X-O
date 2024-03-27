@@ -1,14 +1,13 @@
 import { SYMBOL_O, SYMBOL_X } from './constants'
-import styles from './game.module.css'
 
 export function GameSymbol({ symbol }) {
 	const getSymbolClassName = symbol => {
-		if (symbol === SYMBOL_O) return styles['symbol--o']
-		if (symbol === SYMBOL_X) return styles['symbol--x']
+		if (symbol === SYMBOL_O) return 'text-emerald-500'
+		if (symbol === SYMBOL_X) return 'text-pink-500'
 		return ''
 	}
 	return (
-		<span className={`${styles['symbol']} ${getSymbolClassName(symbol)}`}>
+		<span className={`text-xl leading-6 ${getSymbolClassName(symbol)}`}>
 			{symbol}
 		</span>
 	)

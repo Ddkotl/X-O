@@ -33,7 +33,7 @@ export function useGameState() {
 		null,
 		null,
 	])
-	const [currentStep, setCurrentStep] = useState(SYMBOL_O)
+	const [currentStep, setCurrentStep] = useState(SYMBOL_X)
 	const [winnerSequence, setWinnerSequence] = useState()
 
 	const winnerSymbol = winnerSequence ? cells[winnerSequence[0]] : undefined

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "lint": "next lint",
     "prettier": "prettier --write ."
   },

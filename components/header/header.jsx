@@ -1,6 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import Image from "next/image";
-import avatarSrc from "./avatar.jpg";
+import { Profile } from "../profile";
 import { Logo } from "./logo";
 export function Header() {
   return (
@@ -12,13 +11,8 @@ export function Header() {
           Играть
         </button>
       </div>
-
-      <button className="ml-auto flex items-center gap-2 text-start text-teal-600 hover:text-teal-500 transition-colors ">
-        <Image src={avatarSrc} alt="avatar" className="h-12 w-12" />
-        <div>
-          <div className="  text-lg">DmitryKotl</div>
-          <div className=" text-slate-400 text-xs">Рейтинг: 2342</div>
-        </div>
+      <button className="ml-auto flex items-center gap-2 text-start text-teal-600 ">
+        <Profile />
         <ChevronDown className="  h-6 w-6" />
       </button>
     </header>

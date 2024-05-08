@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import { Profile } from "../profile";
+import { UiButton } from "../uikit/ui-button";
 import { Logo } from "./logo";
 export function Header() {
   return (
@@ -7,9 +8,9 @@ export function Header() {
       <div className="flex items-center">
         <Logo />
         <div className="w-px h-8 bg-slate-300 mx-6"></div>
-        <button className=" w-44 bg-teal-600 text-white rounded-lg px-5 py-2 text-xl hover:bg-teal-500 transition-colors">
+        <UiButton className="w-44" size="lg" variant="primary">
           Играть
-        </button>
+        </UiButton>
       </div>
       <button className="ml-auto flex items-center gap-2 text-start text-teal-600 ">
         <Profile />

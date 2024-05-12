@@ -1,7 +1,7 @@
 import { ArrowLeft, History, StarIcon, UserRound } from "lucide-react";
 import Link from "next/link";
 
-export function GameTitle() {
+export function GameTitle({ playersCount }) {
   return (
     <div className="pl-2">
       <Link
@@ -15,7 +15,8 @@ export function GameTitle() {
       <div className="flex gap-2 items-center text-xs text-slate-400">
         <StarIcon className="h-4  hover:text-slate-600" />
         <div className="flex items-center gap-1">
-          <UserRound className="h-4  hover:text-slate-600" />2
+          <UserRound className="h-4  hover:text-slate-600" />
+          {playersCount}
         </div>
         <div className="flex items-center gap-1">
           <History className="h-4  hover:text-slate-600" />1 мин на ход
